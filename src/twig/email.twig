@@ -1,0 +1,13 @@
+{% embed "layouts/html.twig" with { cnf: config, datas: datas, pageID: 'page' } %}
+    {% block html__page %}
+    	<tr><td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img/header.jpg" alt="" /></td></tr>
+
+    	<tr><td>
+			<div class="content">
+				{# CONTENT #}
+			</div>
+    	</td></tr>
+
+    	<tr><td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img//footer.jpg" alt="" /></td></tr>
+    {% endblock %}
+{% endembed %}

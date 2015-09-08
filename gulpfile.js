@@ -65,10 +65,7 @@ gulp.task('inline', function() {
 // Twig task
 gulp.task('twig', function ()
 {
-	del.sync('build/announcement/*.html');
-	del.sync('build/invite/*.html');
-	del.sync('build/reminder/*.html');
-	del.sync('build/thanks/*.html');
+	del.sync('build/email/*.html');
 
 	// CONFIG
 	var config = yaml.safeLoad( fs.readFileSync('src/yaml/config.yml', 'utf8') );
@@ -85,49 +82,14 @@ gulp.task('twig', function ()
 
 		var fileName = pages[i].filename;
 
-
-		// JPEG annoucement
-		gulp.src('src/twig/announcement.twig')
+		gulp.src('src/twig/email.twig')
 			.pipe(twig({
 				data: {
 					datas : pages[i],
 					config : config
 				}
 			}))
-			.pipe(rename('announcement/'+fileName+'.html'))
-			.pipe(gulp.dest('./build/'));
-
-		// JPEG invite
-		gulp.src('src/twig/invite.twig')
-			.pipe(twig({
-				data: {
-					datas : pages[i],
-					config : config
-				}
-			}))
-			.pipe(rename('invite/'+fileName+'.html'))
-			.pipe(gulp.dest('./build/'));
-
-		// JPEG reminder
-		gulp.src('src/twig/reminder.twig')
-			.pipe(twig({
-				data: {
-					datas : pages[i],
-					config : config
-				}
-			}))
-			.pipe(rename('reminder/'+fileName+'.html'))
-			.pipe(gulp.dest('./build/'));
-
-		// JPEG thanks
-		gulp.src('src/twig/thanks.twig')
-			.pipe(twig({
-				data: {
-					datas : pages[i],
-					config : config
-				}
-			}))
-			.pipe(rename('thanks/'+fileName+'.html'))
+			.pipe(rename('email/'+fileName+'.html'))
 			.pipe(gulp.dest('./build/'));
   }
 
