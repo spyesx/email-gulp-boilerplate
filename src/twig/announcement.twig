@@ -1,0 +1,62 @@
+{% embed "layouts/html.twig" with { cnf: config, datas: datas, pageID: 'announcement' } %}
+    {% block html__page %}
+    	<tr><td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img/header.jpg" alt="" /></td></tr>
+
+    	<tr><td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img/intro/{{ datas.filename }}.jpg" alt="" /></td></tr>
+
+    	<tr><td>
+			<div class="content">
+				<div class="alignleft content__intro">
+						<table class="" cellpadding="0" cellspacing="0">
+							<tr>
+								<td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img/logo-youtube.jpg" alt="" /></td>
+								<td><span>Quelle est la place de la vidéo<br />dans votre stratégie média ?</span></td>
+							</tr>
+						</table>
+				</div>
+				<div class="alignleft content__description">
+					{% if datas.title is not empty %}{{ datas.title }} et {% endif %}
+					Google vous invitent à un événement sur le thème de la vidéo 
+					le {{ datas.date }} prochain pour réfléchir aux enjeux de nos campagnes 2016.
+					<br /><br />
+					Nous célébrons ensemble les 10 ans de YouTube !
+				</div>
+				<div class="content__title">
+					SAVE THE DATE<br />
+					{{ datas.weekday|upper }} {{ datas.date|upper }} À PARTIR DE 17H{# <br />
+					CHEZ GOOGLE<br />
+					8, rue de Londres Paris 9ème #}
+				</div>
+				{# <div class="alignleft content__name">Chèr(e) [first-name] [last-name],</div> #}
+				<div class="content__regards">
+					Votre invitation et tous les détails à venir en septembre.
+				</div>
+				<div class="content__ical">
+					<a href="{{ cnf.baseUrl }}/ical/{{ datas.filename }}.ical">Ajouter à mon agenda</a>
+					<br />
+					<a href="{{ datas.googleCalendarLink }}">Ajouter à mon Google Calendar</a>
+				</div>
+
+				<div class="content__people">
+
+					{% if datas.people.guests|length > 0 %}
+						<div class="content__people__guests">
+							{% for guest in datas.people.guests %}
+								<p class="alignleft">{{ guest }}</p>
+							{% endfor %}
+							<br />
+						</div>
+					{% endif %}
+
+					<div class="content__people__host">
+						{% for host in datas.people.google %}
+							<p class="alignleft">{{ host }}</p>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+    	</td></tr>
+
+    	<tr><td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img//footer.jpg" alt="" /></td></tr>
+    {% endblock %}
+{% endembed %}

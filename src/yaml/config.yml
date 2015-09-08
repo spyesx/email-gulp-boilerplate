@@ -1,0 +1,21 @@
+---
+
+#DIST
+title: ''
+baseUrl: 'http://base.url.com/to/assets/'
+imgUrl: ''
+
+#DEV
+# baseUrl: ''
+# imgUrl: '../'
+
+
+ical:
+    domain: 'domain.com'
+    summary: 'Event'
+    organizer: 'Organizer'
+    organizerEmail: ''
+    timezone: 'Europe/Paris'
+    location: 'Event address'
+    language: 'EN'
+    description: 'Event description'

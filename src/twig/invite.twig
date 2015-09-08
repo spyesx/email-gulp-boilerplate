@@ -1,0 +1,34 @@
+{% embed "layouts/html.twig" with { cnf: config, datas: datas, pageID: 'announcement' } %}
+    {% block html__page %}
+    	<tr><td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img/{{ pageID }}-header.jpg" alt="" /></td></tr>
+
+    	<tr><td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img/intro/{{ datas.filename }}.jpg" alt="" /></td></tr>
+
+    	<tr><td>
+			<div class="content">
+				<div class="alignleft content__title">Activez vos campagnes avec YouTube</div>
+				<div class="alignleft content__name">Chèr(e) [first-name] [last-name],</div>
+				<div class="alignleft content__description">
+					Rendez-vous le {{ datas.date }} dans les locaux de <a href="{{ cnf.googleAddressUrl }}">Google Paris</a> à 17h.<br />
+					Réfléchissons ensemble aux nouveaux enjeux de la vidéo online dans le mix media.<br />
+					Profitons de ce moment pour trinquer aux 10 ans de YouTube!
+				</div>
+				<div class="alignleft content__titleCalendar">
+						<table class="" cellpadding="0" cellspacing="0">
+							<tr>
+								<td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img//logo-youtube.jpg" alt="" /></td>
+								<td><span>SAVE THE DATE</span></td>
+							</tr>
+						</table>
+				</div>
+				<div class="alignleft content__ical"><a href="{{ cnf.baseUrl }}/ical/{{ datas.filename }}.ical">Ajouter à mon agenda</a></div>
+				<div class="alignleft content__regards">
+					Plus d’infos à venir en septembre !<br />
+					Très bel été à vous.
+				</div>
+			</div>
+    	</td></tr>
+
+    	<tr><td><img src="{{ cnf.baseUrl }}{{ cnf.imgUrl }}img//{{ pageID }}-footer.jpg" alt="" /></td></tr>
+    {% endblock %}
+{% endembed %}

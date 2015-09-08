@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "foo",
+        "date": "",
+        "title": "",
+        "start": {"year":2015, "month":06, "day":9, "hours":17, "minutes":0},
+        "end": {"year":2015, "month":06, "day":9, "hours":22, "minutes":0},
+        "url": "http://url",
+        "googleCalendarLink" : "",
+        "icalLink" : "",
+        "people" : {
+            "guests" : [
+                ""
+            ],
+            "google" : [
+                ""
+            ]
+        }
+    }
+]

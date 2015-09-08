@@ -1,0 +1,8 @@
+AddType application/octet-stream .ical
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType image/jpg "access 1 second"
+    ExpiresByType image/jpeg "access 1 second"
+    ExpiresDefault "access 2 second"
+</IfModule>

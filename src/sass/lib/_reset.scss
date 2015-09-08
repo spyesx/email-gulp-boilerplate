@@ -1,0 +1,73 @@
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+
+// #outlook a{padding:0;}
+// .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+// .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+// body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+// table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+// img{-ms-interpolation-mode:bicubic;}
+// body{margin:0; padding:0;}
+// img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+// table{border-collapse:collapse !important;}
+// body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+
+
+body, body * {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  width: 100% !important;
+  height: 100%;
+  line-height: 1.6;
+}
+
+/* Let's make sure all tables have defaults */
+
+table td {
+  vertical-align: top;
+}
+
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+
+body {
+  background-color: $color-white;
+}
+
+.body-wrap {
+  background-color: $color-lightgrey;
+  width: 100%;
+}
+
+.container {
+  display: block !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  /* makes it centered */
+  clear: both !important;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  padding: 0 78px 20px 78px;
+}
+
+

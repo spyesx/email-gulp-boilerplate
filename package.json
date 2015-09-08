@@ -1,0 +1,43 @@
+{
+  "name": "Weinto-Email-Boilerplate",
+  "version": "0.0.1",
+  "author": "Nicolas Bages <nicolas.bages@weinto.com>",
+  "description": "Front-end boilerplate using SASS, Gulp, Browserify, Twig and YAML.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spyesx/email-boilerplate.git"
+  },
+  "keywords": [
+    "express",
+    "gulp",
+    "browserify",
+    "sass",
+    "karma",
+    "jasmine",
+    "protractor",
+    "boilerplate"
+  ],
+  "private": true,
+  "engines": {
+    "node": ">=0.12.x"
+  },
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-csso": "^1.0.0",
+    "gulp-filter": "^2.0.2",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-inline-css": "^2.0.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-premailer": "^0.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-twig": "^0.3.0",
+    "gulp-util": "^3.0.6",
+    "ical-generator": "^0.2.2",
+    "js-yaml": "^3.3.1",
+    "run-sequence": "^1.1.2"
+  }
+}

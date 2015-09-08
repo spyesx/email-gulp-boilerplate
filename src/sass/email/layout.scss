@@ -1,0 +1,105 @@
+.main {
+  background: $color-white;
+  margin-top: 20px;
+}
+
+.content-wrap {
+
+}
+
+.content-block {
+  padding: 0 0 20px;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  clear: both;
+  color: $color-black;
+  padding: 20px;
+  p, a, .unsubscribe, td {
+    font-size: 12px;
+  }
+}
+
+
+.content{
+
+  &__title{
+    font-size:24px;
+    margin-top:40px;
+    margin-bottom:20px;
+    font-weight:bold;
+    color:$color-red;
+    text-align:center;
+    line-height:34px;
+  }
+  &__name{
+    color:$color-darkgrey;
+    font-weight:bold;
+    margin-bottom:15px;
+    font-size: 14px;
+  }
+  &__description{
+    color:$color-default;
+    line-height:28px;
+    font-size:19px;
+  }
+  &__intro{
+
+      margin-top: 0px;
+      margin-bottom: 40px;
+
+      td{
+        vertical-align:middle;
+      }
+
+      img{
+        margin-right:10px;
+      }
+
+      span{
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 25px;
+        display:block;
+        margin-left:10px;
+      }
+  }
+  &__ical{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+
+    a{
+      color:$color-red!important;
+      text-decoration:underline;
+    }
+  }
+  &__regards{
+    text-align:center;
+    color:$color-darkgrey;
+    font-size:15px;
+  }
+
+  &__people{
+
+    color:$color-darkgrey;
+    font-style:italic;
+    font-size:15px;
+    margin-top:40px;
+
+    p{
+      margin-top:0px;
+      margin-bottom:0px;
+    }
+
+  }
+
+}
