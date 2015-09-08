@@ -3,7 +3,7 @@ build/.rev
 dist/
 
 
-dploy.yaml
+#dploy.yaml
 
 npm-debug.log
 node_modules

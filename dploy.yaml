@@ -1,0 +1,9 @@
+demo:
+    host: host.com
+    user: USER
+    pass: PASS
+    slots: 10
+    check: true
+    path:
+        local: "dist/"
+        remote: "/"

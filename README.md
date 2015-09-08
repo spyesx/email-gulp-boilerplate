@@ -27,3 +27,7 @@ A quick and easy slack to create emails using dev tools and good practices
 Images are optimized and placed in `build/img` only. `gulp dist` will only inline css into your HTML. 
 
 Feel free to edit `build/.htaccess` to fit your needs regarding assets expirations.
+
+## Dploy
+
+Please visit [the dploy project](http://leanmeanfightingmachine.github.io/dploy/)
