@@ -1,5 +1,7 @@
 # Email Gulp Boilerplate
 
+A quick and easy slack to create emails using dev tools and good practices
+
 ## Tools
 
 * Gulp
